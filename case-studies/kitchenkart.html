@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#07090c" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KitchenKart Full-Stack Store · Case Study · Sruthi G</title>
+  <meta name="description" content="Case study: KitchenKart, a React 19 + Spring Boot / PostgreSQL e-commerce store built at Perficient, with JWT auth, safe stock reservation and transactional checkout." />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090c'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-weight='700' font-size='28' fill='%235fd4c8'%3ESG%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <script>
+    try {
+      document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark';
+    } catch (e) {
+      document.documentElement.dataset.theme = 'dark';
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="atmosphere" aria-hidden="true"><span class="shape shape-1"></span><span class="shape shape-2"></span><div class="grid-lines"></div></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <header class="nav">
+    <a class="nav-logo" href="../index.html">SG<span class="accent">.</span></a>
+    <nav class="nav-links">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#education">Education</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode" aria-pressed="false">
+        <span class="halo" aria-hidden="true"></span>
+        <svg class="bulb" viewBox="0 0 24 24" aria-hidden="true">
+          <circle class="glass" cx="12" cy="9.5" r="6.5" />
+          <path class="filament" d="M9.5 13.5c.2 1 .6 1.7 1 2.2h3c.4-.5.8-1.2 1-2.2" />
+          <rect class="base" x="9.6" y="16" width="4.8" height="1.8" rx="0.6" />
+          <rect class="base" x="9" y="18" width="6" height="1.6" rx="0.6" />
+        </svg>
+      </button>
+      <a href="../index.html#contact" class="btn btn-sm btn-primary">Contact</a>
+    </nav>
+  </header>
+
+  <section class="cs-hero">
+    <a class="cs-back" href="../index.html#work">← Back to portfolio</a>
+    <h1 class="cs-title">KitchenKart — Full-Stack E-commerce Store</h1>
+    <p class="cs-sub">
+      A kitchen and home-appliance store built during Perficient's Global
+      Graduate Training Program: a React 19 storefront and a Spring Boot /
+      Java 21 REST API on PostgreSQL.
+    </p>
+    <div class="cs-meta">
+      <span class="cs-tag">Featured · Full-Stack · Perficient</span>
+      <span>2026</span>
+      <span>E-commerce</span>
+    </div>
+    <ul class="cs-stack">
+      <li>Java 21</li>
+      <li>Spring Boot</li>
+      <li>Spring Security · JWT</li>
+      <li>PostgreSQL · Flyway</li>
+      <li>React 19</li>
+      <li>Redux Toolkit</li>
+      <li>JUnit 5 · Vitest</li>
+    </ul>
+  </section>
+
+  <main class="cs-content" id="main">
+    <section class="cs-section reveal">
+      <h2><span class="num">01.</span> Overview</h2>
+      <p>An appliance store with a React 19 storefront and a Spring Boot / Java 21 API on PostgreSQL, built as an individual training capstone at Perficient.</p>
+    </section>
+    <section class="cs-section reveal">
+      <h2><span class="num">02.</span> What I Built</h2>
+      <ul>
+        <li>Storefront with catalogue, cart, checkout, order tracking and an admin console (React + Redux Toolkit).</li>
+        <li>REST API in layers (controller → service → repository), with JWT access tokens and rotating refresh tokens.</li>
+        <li>Stock reservation that never oversells, and checkout that is safe against double-clicks.</li>
+        <li>Installation booking that activates the product's warranty once it's installed.</li>
+      </ul>
+    </section>
+    <section class="cs-section reveal">
+      <h2><span class="num">03.</span> Bugs I Caught</h2>
+      <ul>
+        <li><strong>Lockout that never locked:</strong> the failed-login counter was rolled back by the same error it recorded. Fixed and covered by a test.</li>
+        <li><strong>Leaking stock:</strong> the job that releases abandoned carts never ran because scheduling wasn't enabled. Fixed and covered by a test.</li>
+      </ul>
+    </section>
+    <section class="cs-section reveal">
+      <h2><span class="num">04.</span> How I Used AI</h2>
+      <p>Built with AI coding assistants. I wrote the specs, reviewed every change before keeping it, and checked behaviour with tests and the running app — the bugs above were caught that way.</p>
+    </section>
+
+    <div class="cs-cta">
+      <h3>Want the details?</h3>
+      <p>The source code lives in a private Perficient repository, so I can't link it here — but I'm happy to walk through the checkout transactions, token rotation or the concurrency tests in a call.</p>
+      <div class="cs-cta-links">
+        <a class="btn btn-primary" href="mailto:sruthi.g@perficient.com">sruthi.g@perficient.com</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Sruthi G · <a href="../index.html">Back to portfolio</a></p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

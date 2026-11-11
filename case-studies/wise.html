@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#07090c" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WISE Wealth Onboarding &amp; Advisor 360 · Case Study · Sruthi G</title>
+  <meta name="description" content="Case study: WISE, a wealth-management app covering online account opening, compliance review and an Advisor 360 view, built with Spring Boot, PostgreSQL and React at Perficient." />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090c'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-weight='700' font-size='28' fill='%235fd4c8'%3ESG%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <script>
+    try {
+      document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark';
+    } catch (e) {
+      document.documentElement.dataset.theme = 'dark';
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="atmosphere" aria-hidden="true"><span class="shape shape-1"></span><span class="shape shape-2"></span><div class="grid-lines"></div></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <header class="nav">
+    <a class="nav-logo" href="../index.html">SG<span class="accent">.</span></a>
+    <nav class="nav-links">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#education">Education</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode" aria-pressed="false">
+        <span class="halo" aria-hidden="true"></span>
+        <svg class="bulb" viewBox="0 0 24 24" aria-hidden="true">
+          <circle class="glass" cx="12" cy="9.5" r="6.5" />
+          <path class="filament" d="M9.5 13.5c.2 1 .6 1.7 1 2.2h3c.4-.5.8-1.2 1-2.2" />
+          <rect class="base" x="9.6" y="16" width="4.8" height="1.8" rx="0.6" />
+          <rect class="base" x="9" y="18" width="6" height="1.6" rx="0.6" />
+        </svg>
+      </button>
+      <a href="../index.html#contact" class="btn btn-sm btn-primary">Contact</a>
+    </nav>
+  </header>
+
+  <section class="cs-hero">
+    <a class="cs-back" href="../index.html#work">← Back to portfolio</a>
+    <h1 class="cs-title">WISE — Wealth Insights, Services &amp; Enrollment</h1>
+    <p class="cs-sub">
+      One app that takes a wealth-management client from opening an account
+      online to being looked after by an advisor: WISE Onboarding (New Account
+      Opening) and WISE Advisor 360.
+    </p>
+    <div class="cs-meta">
+      <span class="cs-tag">Current · Individual project · Perficient</span>
+      <span>2026</span>
+      <span>Banking &amp; Wealth Management</span>
+    </div>
+    <ul class="cs-stack">
+      <li>Java 21 · Spring Boot 3.5</li>
+      <li>Spring Security · JWT</li>
+      <li>PostgreSQL · Flyway</li>
+      <li>Spring Cache · Caffeine</li>
+      <li>Tesseract OCR · PDFBox</li>
+      <li>React · Chart.js</li>
+      <li>JUnit · Mockito · Postman</li>
+    </ul>
+  </section>
+
+  <main class="cs-content" id="main">
+    <section class="cs-section reveal">
+      <h2><span class="num">01.</span> Overview</h2>
+      <p>A wealth-management app covering the whole journey: a client opens an account online, Operations and Compliance review it, and once it's approved an advisor manages the client in Advisor 360. Advisory only — it never trades.</p>
+    </section>
+    <section class="cs-section reveal">
+      <h2><span class="num">02.</span> What I Built</h2>
+      <ul>
+        <li>5 roles (Client, Operations, Compliance, Admin, Advisor) secured with Spring Security and JWT; the admin can never approve applications.</li>
+        <li>A 15-section onboarding form with backend validation (PAN, Aadhaar, IFSC, age, beneficiaries = 100%) and a risk profile.</li>
+        <li>Identity and bank numbers encrypted at rest and masked on screen; an OCR hint on uploaded IDs for reviewers.</li>
+        <li>Advisor 360: 3 plain-Java risk rules, a portfolio Health Score and suggestions with follow-ups.</li>
+        <li>Approval in one transaction that creates the account and assigns the least-busy advisor; cached dashboard totals.</li>
+      </ul>
+    </section>
+    <section class="cs-section reveal">
+      <h2><span class="num">03.</span> How I Used AI</h2>
+      <p>Built with AI coding assistants, with one rule: I had to understand every line before keeping it. I wrote the plan, reviewed each change and checked it with tests.</p>
+    </section>
+
+    <div class="cs-cta">
+      <h3>Want the details?</h3>
+      <p>The source code lives in a private Perficient repository, so I can't link it here — but I'm happy to walk through the workflow, the security model or Advisor 360 in a call.</p>
+      <a class="btn btn-primary" href="mailto:sruthi.g@perficient.com">sruthi.g@perficient.com</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Sruthi G · <a href="../index.html">Back to portfolio</a></p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
