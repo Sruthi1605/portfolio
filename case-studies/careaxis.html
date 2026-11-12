@@ -4,19 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="theme-color" content="#07090c" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CareAxis Hospital Management System · Case Study · Sruthi G</title>
-  <meta name="description" content="Case study: CareAxis, a hospital management system with a Spring Boot core, a FastAPI intelligence service and a React app for 7 hospital roles, built at Perficient." />
+  <title>CareAxis Hospital Management System · Liner notes · Sruthi G.</title>
+  <meta name="description" content="Case study: CareAxis, a hospital management system with a Spring Boot core, a FastAPI intelligence service and a React app for 7 hospital roles." />
   <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../liner.css" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090c'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-weight='700' font-size='28' fill='%235fd4c8'%3ESG%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <script>
-    try {
-      document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark';
-    } catch (e) {
-      document.documentElement.dataset.theme = 'dark';
-    }
+    (function () {
+      var d = document.documentElement, m = 'studio';
+      try { var v = localStorage.getItem('mode'); if (v === 'acoustic' || v === 'live') m = v; } catch (e) {}
+      d.dataset.mode = m;
+      d.dataset.theme = m === 'acoustic' ? 'light' : 'dark';
+    })();
   </script>
 </head>
 <body>
@@ -25,26 +27,18 @@
   <div class="scroll-progress" id="scrollProgress"></div>
   <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
   <header class="nav">
-    <a class="nav-logo" href="../index.html">SG<span class="accent">.</span></a>
+    <a class="nav-logo" href="../index.html">SG<span class="accent">&#8209;</span>001</a>
     <nav class="nav-links">
-      <a href="../index.html#work">Work</a>
-      <a href="../index.html#skills">Skills</a>
-      <a href="../index.html#education">Education</a>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode" aria-pressed="false">
-        <span class="halo" aria-hidden="true"></span>
-        <svg class="bulb" viewBox="0 0 24 24" aria-hidden="true">
-          <circle class="glass" cx="12" cy="9.5" r="6.5" />
-          <path class="filament" d="M9.5 13.5c.2 1 .6 1.7 1 2.2h3c.4-.5.8-1.2 1-2.2" />
-          <rect class="base" x="9.6" y="16" width="4.8" height="1.8" rx="0.6" />
-          <rect class="base" x="9" y="18" width="6" height="1.6" rx="0.6" />
-        </svg>
-      </button>
-      <a href="../index.html#contact" class="btn btn-sm btn-primary">Contact</a>
+      <a href="../index.html#tracks">Tracks</a>
+      <a href="../index.html#studio">Studio</a>
+      <a href="../index.html#awards">Awards</a>
+      <a href="../index.html#credits" class="btn btn-sm btn-primary">Credits</a>
     </nav>
   </header>
 
   <section class="cs-hero">
-    <a class="cs-back" href="../index.html#work">← Back to portfolio</a>
+    <a class="cs-back" href="../index.html#a2">← Back to the record</a>
+    <p class="cs-code">A2 · Liner notes</p>
     <h1 class="cs-title">CareAxis — Hospital Management System</h1>
     <p class="cs-sub">
       One system for a fictional 300-bed hospital, from registration to
@@ -52,7 +46,7 @@
       service and a React app for seven hospital roles.
     </p>
     <div class="cs-meta">
-      <span class="cs-tag">Featured · Full-Stack · Perficient</span>
+      <span class="cs-tag">Recent release · Full-Stack</span>
       <span>2026</span>
       <span>Healthcare</span>
     </div>
@@ -88,20 +82,16 @@
         <li><strong>Unlimited password guessing</strong> — now locked after 5 failed sign-ins in 15 minutes.</li>
       </ul>
     </section>
-    <section class="cs-section reveal">
-      <h2><span class="num">04.</span> How I Used AI</h2>
-      <p>Built with AI coding assistants. I wrote the specs, reviewed every change before keeping it, and checked behaviour with tests and the running app — the bugs above were caught that way.</p>
-    </section>
 
     <div class="cs-cta">
       <h3>Want the details?</h3>
-      <p>The source code lives in a private Perficient repository, so I can't link it here — but I'm happy to walk through the architecture, the fallbacks or the audit in a call.</p>
+      <p>I'm happy to walk through the architecture, the fallbacks or the audit in a call.</p>
       <a class="btn btn-primary" href="mailto:sruthi.g@perficient.com">sruthi.g@perficient.com</a>
     </div>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Sruthi G · <a href="../index.html">Back to portfolio</a></p>
+    <p>© 2026 Sruthi G · <a href="../index.html">Back to the record</a></p>
   </footer>
 
   <script src="../script.js"></script>
